@@ -66,18 +66,33 @@
         <form>
             <p class='mt-5'>Once you delete this account will move to archive.</p>
             <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input" type="checkbox" value="true" id="flexCheckDefault">
             <label class="form-check-label mb-3" for="flexCheckDefault">
                 Permanently delete this account.
             </label>
             </div>
-            <button type='button' class='deleteBtn'>Delete</button>
+            <button type='button' class='deleteBtn' onclick='deleteBtn()'>Delete</button>
             <button type='button' class='cancelBtn' onclick='cancelBtn()'>Cancel</button>
         </form>
 
     </div>
 
     <script>
+        function deleteBtn(){
+			
+			let url = window.location.href
+			let tempUrl = url.split("?id=")
+			let temp = tempUrl[1].split("?name=")
+			let id = temp[0]
+			let name = temp[1]
+			
+            var checked = document.querySelector('.form-check-input').checked;
+            if(checked === true){
+				window.location.replace('/Clinic/api/delete.php?id='+id+'?name='+name)
+			} else {
+				window.location.replace('/Clinic/api/archive.php?id='+id+'?name='+name)
+			}
+        }
         function cancelBtn(){
             window.location.replace('/Clinic/admin/accounts.php')
         }
