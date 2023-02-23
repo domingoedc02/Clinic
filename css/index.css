@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=La+Belle+Aurore&family=Oswald:wght@700&family=Secular+One&display=swap');
+*{
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
+#docImg{
+    display: block;
+    margin: 0 auto;
+    border: 2px solid whitesmoke;
+    box-shadow: 0px 1px 10px gray;
+}
+#quote{
+    width: 500px;
+    text-align: justify;
+}
+#home{
+    margin-top: 10px;
+    animation: blinks 2s;
+    margin-bottom: 250px;
+    overflow-y: hidden;
+}
+@keyframes blinks {
+    0%{
+        margin-right: -500px;
+        opacity: 0%;
+        transform: rotate(-90deg);
+    }
+    75%{
+        opacity: 50%;
+    }
+    100%{
+
+    }
+}
+.quotes{
+    display: block;
+    font-family: 'Secular One', sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 500px;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+.quotes:hover{
+    animation: hover 5s ;
+}
+.qt{
+    display: block;
+    
+}
+@keyframes hover {
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        text-decoration: underline ;
+        text-decoration-color: red;
+        opacity: 100%;
+    }
+    100%{
+        text-decoration: underline;
+            text-decoration-color: rgb(14, 14, 107);
+    }
+}
+.working{
+    display: block;
+    margin: 100px 10%;
+    padding-top: 200px;
+}
+.sched{
+    padding-top: 200px;
+    width: 100px;
+}
+
+#album a{
+    display: inline-block;
+}
+
+#album a img{
+    display: inline-block;
+    height: 150px;
+    width: 250px;
+}
+footer{
+    box-shadow: 0px 10px 10px gray;
+}
+footer div {
+    background-color: whitesmoke;
+    padding: 5px;
+    
+}
+
+footer div h6 {
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+form{
+    width: 500px;
+}
+.item1{
+    border: solid 1px black;
+    padding: 20px;
+}
+#add{
+    display: block;
+    margin: 0 auto;
+    padding: 5px 20px;
+    background-color: rgb(88, 196, 88);
+    border: 1px solid rgb(90, 89, 89);
+}
+.totalam{
+    position: fixed;
+    margin: 20px 700px;
+    width: 300px;
+}
+.totalcon{
+    border-top: 1px solid black;
+    width: 300px;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+#invoiceBtn{
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(70, 70, 228);
+    color: white;
+    border: 1px solid darkblue;
+    margin-top: 20px;
+}

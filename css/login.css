@@ -1,0 +1,79 @@
+body {
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+        background-attachment: fixed;
+}
+/* #username{
+    margin: 20px;
+} */
+#form{
+    display: block;
+    margin: 100px auto;
+    border: solid 1px black;
+    padding: 20px 40px;
+    padding-bottom: 50px;
+    background-color: aliceblue;
+    opacity: 90%;
+    border-radius: 5%;
+    animation: animatedform 3s ;
+}
+@keyframes animatedform {
+    0%{
+        margin-top: 500px;
+        opacity: 0%;
+    }
+    100%{
+        margin: 100px auto;
+        opacity: 90%;
+    }
+}
+h1{
+    text-align: center;
+}
+#loginBtn{
+    display: block;
+    margin: 30px auto;
+    padding: 5px 30px;
+    background-color: #f5d89d;
+    border: 1px solid #9b8c6e;
+    border-radius: 10px;
+}
+#loginBtn:hover{
+    background-color: #9b8c6e;
+    color: aliceblue;
+}
+#profile{
+    display: block;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin-top: -60px;
+    background-color: aliceblue;
+}
+nav{
+    background-color: whitesmoke;
+}
+#navLogin{
+    margin: 0 10px;
+    background-color: rgb(136, 160, 94);
+    padding: 5px 30px;
+    border: 1px solid rgb(136, 160, 94);
+    border-radius: 5px;
+}
+#navRegis {
+    margin: 0 10px;
+    background-color: rgb(239, 228, 128);
+    padding: 5px 20px;
+    border: 1px solid rgb(209, 196, 78);
+    border-radius: 5px;
+}
+footer div{
+    background-color: whitesmoke;
+    padding: 5px;
+}
+footer div h6{
+    text-align: center;
+}
